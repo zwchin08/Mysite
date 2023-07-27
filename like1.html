@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>個人の趣味</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         /* 使用CSS样式来设置首行缩进 */
+         p {
+          text-indent: 1em; /* 1em等于一个字体的宽度 */
+        }
+        .content {
+            margin: 20px 40px; /* 添加上下和左右的边距 */
+        }
+
+        /* 添加的样式 */
+      
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color:  #DE2B41;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            /* 添加字体变大的效果 */
+            transition: font-size 0.2s ease;
+        }
+
+        /* 添加鼠标移动到导航栏文字时字体变大的效果 */
+        nav ul li a:hover {
+            font-size: 20px;
+        }
+
+        .content {
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 优化标题文字样式 */
+        h2 {
+            margin-bottom: 10px;
+            color: #DE2B41; /* 使用主题色 */
+            font-size: 24px; /* 调整字体大小 */
+            text-align: center; /* 居中标题文字 */
+        }
+
+        /* 添加图片的过渡效果 */
+        .gallery img {
+            transition: transform 0.3s ease;
+        }
+
+        /* 添加图片的气泡效果 */
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 添加图片的气泡动画效果 */
+        @keyframes bubble {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        .gallery img:hover::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: bubble 1s ease-out;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify; /* 添加段落文本两端对齐效果 */
+        }
+
+        /* 悬浮按钮样式 */
+        .floating-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #DE2B41;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .floating-button:hover {
+            transform: scale(1.1);
+        }
+
+       
+
+        footer {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1 style="color: #DE2B41; font-size: 36px;">個人の趣味</h1>    
+    </header>
+
+    <!-- ナビゲーションバー -->
+    <nav>
+        <ul>
+            <li><a href="#sports">スポーツ</a></li>
+            <li><a href="#reading">読書</a></li>
+            <li><a href="#food">グルメ</a></li>
+            <li><a href="#games">ゲーム</a></li>
+            <li><a href="#singing">歌唱</a></li>
+            <li><a href="#carrepair">車の修理</a></li>
+           
+            <li><a href="index1.html">
+                <button> Back HomePage </button>
+              </a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- コンテンツエリア -->
+    <div class="content">
+        <!-- 添加悬浮按钮 -->
+        <a class="floating-button" href="#top">Back Top</a>
+        
+
+        <!-- スポーツ -->
+        <section id="sports">
+            <h2>スポーツが好き</h2>
+            <div class="gallery">
+               
+                <img src="img/1514906basketball.jpg" alt="スポーツ2">
+               
+            <p>私にとって、スポーツは体と心の健康を保つ重要な手段です。アウトドアランニング、バスケットボール、サイクリングが好きです。</p>
+        </section>
+
+        <!-- 読書 -->
+        <section id="reading">
+            <h2>手作り と スマートフォン写真</h2>
+            <div class="gallery">
+                <img src="img/1514906mono.jpg" alt="読書1">
+                <img src="img/1514906zhaopian.jpg" alt="読書2">
+            </div>
+            <p>毎晩寝る前に良い本を読むのが好きです。様々なジャンルのストーリーや知識を探求するのが楽しみです。</p>
+        </section>
+
+        <!-- グルメ -->
+        
+        <section id="food">
+            <h2>食べ物探求</h2>
+            <p>グルメ愛好者であり、様々な料理を試し、さまざまな味と風味を楽しむのが好きです。</p>
+            <div class="gallery">
+                <p>私は美食が大好きで、たくさんの美食を試しましたが、中でも一番好きなのはラーメンです。中国にいたとき、どこに行っても地元の特色ある軽食や麺料理を知るようにしていました。中国にはおそらく少なくとも10種類以上のラーメンがあり、私自身も7、8種類以上を試した記憶があります。その中でも一番好きなのは蘭州ラーメンで、次に北京の炸醤麺です。日本に来てからも、たくさんのラーメンを試しましたが、どれも非常に美味でした。</p>
+            
+                
+                <img src="img/meishi.jpg" alt="自炊1">  
+                
+                <p>休暇の時には、簡単な料理も自分で作ります。以下は今年の新年に作ったものです。</p>
+                <img src="img/1514906lamian01.jpg" alt="自炊1">  
+                <img src="img/1514906lamian02.jpg" alt="自炊1">
+            </div>
+        
+        </section>
+
+       
+
+        <!-- ゲーム -->
+        <section id="games">
+            <h2>ゲーム と 映画 の世界</h2>
+            <div class="gallery">
+                <img src="img/1514906game.jpg" alt="ゲーム1">
+            </div>
+            <p>冒険と挑戦を求めてゲームの世界で遊ぶのが好きです。特にパズルとアドベンチャーゲームが大好きです。</p>
+        </section>
+
+        <!-- 歌唱 -->
+        <section id="singing">
+            <h2>歌を歌う</h2>
+            <div class="gallery">
+                <img src="img/1514906shaokao.jpg" alt="歌唱1">
+                <img src="img/1514906ktv.jpg" alt="歌唱1">
+            </div>
+            <p>音楽への愛情から、暇な時間に歌を歌うことが好きです。気持ちをリリースするためです。</p>
+        </section>
+
+        <!-- 車の修理 -->
+        <section id="carrepair">
+            <h2>車の修理</h2>
+            <div class="gallery">
+                <img src="carrepair1.jpg" alt="車の修理1">
+            </div>
+            <p>私は車の修理が趣味です。エンジンのトラブルを診断し、オイル交換、ブレーキ交換、タイヤ交換などの基本的な整備作業を行うことができます。</p>
+            <p>車の修理は私にとってストレス解消の方法でもあります。自分の車を自分で修理することで、車に対する理解と親近感が深まります。</p>
+        </section>
+    </div>
+    <a href="index1.html">
+        <button> Back HomePage </button>
+      </a>
+
+    <!-- フッター -->
+    <footer>
+        <p>著作権所有 © 2023 - 吉田学園情報ビジネス専門学校|陳正偉</p>
+    </footer>
+</body>
+</html>

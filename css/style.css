@@ -1,0 +1,219 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 使用弹性布局方便一些；上下居中；两端对齐  flex阮一峰*/
+/* position: fixed;
+	top: 0;
+	left: 0;
+	这三项是让主页的log和后边的导航栏在图片背景上显示出来而不是直接在上边显示
+	 */
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	padding: 10px 10%;
+	/* 255是白色；最后的0.3是调整透明度的 */
+	background-color: rgb(255,255,255,0.3);
+}
+.logo h1{
+	color:red;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+/* 去掉默认属性下划线 */
+.nav a{
+	/* 颜色使用默认色因为是链接 */
+	text-decoration: none; 
+	color: #333;
+	font-size: 16px;
+	font-weight: bolder;
+	margin-left: 30px;
+
+}
+.banner{
+	width: 100%;
+	/* 下面是显示整个图片的百分比 */
+	height:90vh;
+	
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+	/* 下面的属性是将图片自动裁剪 */
+	object-fit: cover;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.title h3{
+	text-align:center;
+	font-size: 30px;
+	color: #555;
+	letter-spacing: 5px;
+	/* margin: 0 20px 0 20px; */
+	margin: 0 20px;
+	font-weight: normal;
+}
+.title .line{
+	width: 80px;
+	height: 3px;
+	background: #999;
+}
+#about{
+	/* 	display: flex;
+	justify-content: space-between;表示的是在下一级的div显示是弹性的；然后两端对齐 */
+	display: flex;
+	justify-content: space-between;
+	width: 80%;	
+	margin: 30px;
+}
+.about-img{
+	width: 38%;
+	/* height:250px; */
+	
+}
+.about-img img{
+	width: 100%;
+	/* 继承父级的高度 */
+	height: 100;
+	object-fit: cover;
+}
+.about-text{
+	width: 50%;
+}
+.about-text p{
+	/* line-height: 1.8;
+	text-indent: 2em;行间距和首行缩进 */
+	line-height: 1.8;
+	text-indent: 1em;
+	margin: 15px 0;
+}
+#work ul{
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: 30px auto;
+	background: #DE2B41;
+}
+#work ul li{
+	list-style: none;
+	width: 23%;
+}
+#work ul li img{
+	display: block;
+	width: 100%;
+	height: 200px;
+	/* border-radius: 30px;显示的东西有三十度的弧形 */
+	border-radius: 30px 30px 0 0;
+	object-fit: cover;
+}
+
+#work ul li iframe{
+	display: block;
+	width: 100%;
+	height: 200px;
+	/* border-radius: 30px;显示的东西有三十度的弧形 */
+	border-radius: 30px 30px 0 0;
+	object-fit: cover;
+}
+
+#work ul li p{
+	padding: 10px;
+	text-align: center;
+	font-size: bold;
+	color: #555;
+	background: #f2f2f2;
+}
+#work ul li span{
+	display: flex;
+	justify-content: center;
+	
+}
+
+#like{
+	width: 1200px;
+	margin: 30px auto;
+}
+#like span{
+	background: #f2f2f2;
+	padding: 5px 10px;  
+	margin-right: 15px;
+}
+#like span:first-child{
+	background: #DE2B41;
+	border-radius: 3px;
+}
+#like span:first-child{
+	background: #DE2B41;
+	color: #FFF;
+}
+#like span:nth-child(3){
+	background: skyblue;
+
+}
+#like span:last-child{
+	background: seagreen;
+	color: #FFF;
+}
+.contact{
+	width: 1200px;
+	margin: 30px auto;
+}
+.contact input{
+	display: block;
+	width: 300px;
+	height: 35px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.contact textarea{
+outline: none;
+padding: 10px;
+width: 800px;
+font-size: 16px;
+}
+.contact button{
+	cursor: pointer;
+	display: block;
+	width: 120px;
+	height: 40px;
+	margin-top:30px;
+	background: #DE2B41;
+	border: none;
+	color: #FFF;
+	border-radius:5px;
+	font-size: 16px;
+}
+.footer{
+	text-align: center;
+	color: #FFF;
+	background: #333;
+	padding: 15px 0;
+}
+.footer  .share{
+  margin:10px 0;
+}
+
+.footer .share a{
+  text-decoration: none; 
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  color:var(--black);
+  background: var(--light-bg);
+  color: #FFF;
+}
+
+
+
