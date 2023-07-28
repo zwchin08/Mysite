@@ -1,309 +1,324 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<!-- <meta charset="utf-8" /> -->
-		<title>チンせイイ個人サイト</title>
-		 <!-- font awesome cdn link  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
-		<style>
-			/* 设置表格样式 */
-			.shuoming {
-				width: 100%;
-				border-collapse: collapse;
-				background-color: #f2f2f2; /* 设置表格背景颜色为浅灰色 */
-				border: 2px solid #ddd; /* 设置表格边框样式 */
-			}
-		
-			.shuoming th, .shuoming td {
-				border: 1px solid #ddd; /* 设置单元格边框样式 */
-				padding: 8px;
-				text-align: left;
-			}
-		
-			.shuoming th {
-				background-color: #DE2B41; /* 设置表头背景颜色为绿色 */
-				color: white; /* 设置表头文字颜色为白色 */
-			}
-		
-			/* 如果需要为表格内的某些行添加不同的背景颜色，您可以通过以下方式实现 */
-			.shuoming tr:nth-child(even) {
-				background-color: #f9f9f9; /* 设置偶数行背景颜色为浅灰色 */
-			}
-		
-			.shuoming tr:nth-child(odd) {
-				background-color: white; /* 设置奇数行背景颜色为白色 */
+
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<!-- <meta charset="utf-8" /> -->
+	<title>チンせイイ個人サイト</title>
+	<!-- font awesome cdn link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./bootstrap-3.4.1/fonts/">
+	<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+	<style>
+		/* 设置表格样式 */
+		.shuoming {
+			width: 100%;
+			border-collapse: collapse;
+			background-color: #f2f2f2;
+			/* 设置表格背景颜色为浅灰色 */
+			border: 2px solid #ddd;
+			/* 设置表格边框样式 */
+		}
+
+		.shuoming th,
+		.shuoming td {
+			border: 1px solid #ddd;
+			/* 设置单元格边框样式 */
+			padding: 8px;
+			text-align: left;
+		}
+
+		.shuoming th {
+			background-color: #DE2B41;
+			/* 设置表头背景颜色为绿色 */
+			color: white;
+			/* 设置表头文字颜色为白色 */
+		}
+
+		/* 如果需要为表格内的某些行添加不同的背景颜色，您可以通过以下方式实现 */
+		.shuoming tr:nth-child(even) {
+			background-color: #f9f9f9;
+			/* 设置偶数行背景颜色为浅灰色 */
+		}
+
+		.shuoming tr:nth-child(odd) {
+			background-color: white;
+			/* 设置奇数行背景颜色为白色 */
+		}
 
 
-			}
+		/* 视频放大样式 */
+		.video-enlarge {
+			width: 600px;
+			/* 调整为所需的放大宽度 */
+			height: 450px;
+			/* 调整为所需的放大高度 */
+		}
+	</style>
 
 
-						/* 视频放大样式 */
-			.video-enlarge {
-				width: 600px; /* 调整为所需的放大宽度 */
-				height: 450px; /* 调整为所需的放大高度 */
-			}
-					
-		</style>
 
-		
-		
-		
-	</head>
-	<body>
-		
-		<!-- 头部 -->
-		<div class="header">
-			<div class="logo">
-				<h1>刺客MIB</h1>
-			</div>
-			<!-- 导航部分 -->
-			<div class="nav">
-				<a href="index1.html">Home</a>
-				<a href="#about">About Me</a>
-				<a href="#work">Works</a>
-				<a href="#like">Hobby</a>
-				<a href="contact">Contacts</a>
-			</div>
+
+</head>
+
+<body>
+
+	<!-- 头部 -->
+	<div class="header">
+		<div class="logo">
+			<h1>刺客MIB</h1>
 		</div>
-		<div class="banner">
-			<img src="img/heike02.jpg" alt="">
+		<!-- 导航部分 -->
+		<div class="nav">
+			<a href="index1.html">Home</a>
+			<a href="#about">About Me</a>
+			<a href="#work">Works</a>
+			<a href="#like">Hobby</a>
+			<a href="contact">Contacts</a>
 		</div>
-		<!-- 关于我   一般肯定是 有一张图片和一段话-->
-		<!-- 标题 -->
-		<div class="title">
-			<div class="line"></div>
-			<h3>About Me</h3>
-			
-		
-			<div class="line"></div>
+	</div>
+	<div class="banner">
+		<img src="img/heike02.jpg" alt="">
+	</div>
+	<!-- 关于我   一般肯定是 有一张图片和一段话-->
+	<!-- 标题 -->
+	<div class="title">
+		<div class="line"></div>
+		<h3>About Me</h3>
+
+
+		<div class="line"></div>
+	</div>
+	<div id="about">
+		<div class="about-img">
+			<a href="indexPre.html">
+				<img src="img/heike05.jpg" alt="">
+			</a>
+
 		</div>
-		<div id="about">
-			<div class="about-img">
-				<a href="indexPre.html">
-				  <img src="img/heike05.jpg" alt="">
+		<div class="about-text">
+
+			<p>頼られる存在であり続ける (keep reliable)</p>
+
+			<p>チンせイイと申します。現在は北海道札幌市にある吉田学園情報ビジネス専門学校
+				のAIシステム学科1年生です。私は中国の偏遠な農村で生まれました。努力の末、大学に進学しましたが、
+				専攻は親が選んだものであり、自分の好きなものではありませんでした。
+				経済的な理由から、大学を卒業後は即座に就職せざるを得ませんでした。しかし、コロナのきっかけ、
+				自分の好きな仕事を選ぶ機会が巡ってきました。私はコンピュータを再学習し、人生に新しい一章
+				を刻み始めました。
+			</p>
+			<a href="indexPre.html">
+				<button> see more </button>
+			</a>
+		</div>
+	</div>
+
+	<!-- 我的作品   一般展示图片自己的作品和介绍-->
+	<div class="title">
+		<div class="line"></div>
+		<h3>Works</h3>
+		<div class="line"></div>
+	</div>
+
+	<div id="work">
+		<ul>
+			<li>
+				<!-- <img src="img/zuopin07.jpg" alt=""> -->
+				<iframe src="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview" width="100%" height="200" allow="autoplay"></iframe>
+				<p>python果物の売上予測を行う</p>
+				<a href="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview">
+					<span>(クリックして拡大表示)</span>
 				</a>
-				
-			</div>
-			<div class="about-text">
-								
-								  <p>頼られる存在であり続ける (keep reliable)</p>
-							
-								<p>チンせイイと申します。現在は北海道札幌市にある吉田学園情報ビジネス専門学校
-								のAIシステム学科1年生です。私は中国の偏遠な農村で生まれました。努力の末、大学
-								に進学しましたが、専攻は親が選んだものであり、自分の好きなものではありませんでした。 
-								経済的な理由から、大学を卒業後は即座に就職せざるを得ませんでした。しかし、コロナのきっかけ、
-								自分の好きな仕事を選ぶ機会が巡ってきました。 私はコンピュータを再学習し、人生に新しい一章
-								を刻み始めました。
-								</p>
-								<a href="indexPre.html">
-									<button> see  more </button>
-								  </a>
-							</div>
-		</div>
-		
-		<!-- 我的作品   一般展示图片自己的作品和介绍-->
-		<div class="title">
-			<div class="line"></div>
-			<h3>Works</h3>
-			<div class="line"></div>
-		</div>
-		
-		<div id="work">
-			<ul>
-				<!-- <li>
-					<img src="img/zuopin08.jpg" alt="">
-					<p>AI技術を通じて处理文字识别</p>      
-				</li> -->
-				<li>
-					<!-- <iframe src="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview" width="100%" height="200" allow="autoplay"></iframe> -->
-					<img src="img/zuopin08.jpg" alt="">
-					<p>AI技術を通じて处理文字识别</p> 
-					<a href="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview">					
-						<span>(点击查看更大画面)</span> 
-					</a>
-					    
-				</li>
 
-				<!-- <li>
-					<img src="img/zuopin06.jpg" alt="">
-					<p>Java で開発したGUI Game</p>
-				</li> -->
-				<li>
-					<img src="img/zuopin06.jpg" alt="">
-					<!-- <iframe src="https://drive.google.com/file/d/1Lo6llkr_VP6sMc1_J8HHgyztah8XBArP/preview"width="100%" height="200" allow="autoplay"></iframe> -->
-					<p>Java で開発したGUI Game</p>
-					<a href="https://drive.google.com/file/d/1Lo6llkr_VP6sMc1_J8HHgyztah8XBArP/preview">					
-						<span>(点击查看更大画面)</span> 
-					</a>
-
-				</li>
-
-				<!-- <li>
-					<img src="img/zuopin05.jpg" alt="">
-					<p>Tomcatを用いて動かす🐟</p>
-				</li> -->
-				<li>
-					<img src="img/zuopin05.jpg" alt="">
-					<!-- <iframe src="https://drive.google.com/file/d/11-rl1DRPvEutby7vexKLO9VJalQn4a7o/preview"width="100%" height="200" allow="autoplay"></iframe> -->
-					<p>簡単な学生管理システム🐟</p>			
-					<a href="https://drive.google.com/file/d/11-rl1DRPvEutby7vexKLO9VJalQn4a7o/preview">						
-						<span>(点击查看更大画面)</span> 
-					</a>
-
-				</li>
-				
-				
-				<li>
-					<img src="img/zuopin07.jpg" alt="">
-					<!-- <iframe src="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview" width="100%" height="200" allow="autoplay"></iframe> -->
-					<p>python果物の売上予測を行う</p>
-					<a href="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview">
-						<span>(点击查看更大画面)</span> 
-					  </a>
-		
-				</li>
-				
-			</ul>
-			<ul>
-				
-					<div>
-						<table  class="shuoming">
-					            <tr>
-					              <th>難易度</th>
-					              <td>★★★★★</td>
-								  <td>★★★★</td>
-								  <td>★★★</td>
-								  <td>★★</td>
-					            </tr>
-					            <tr>
-					              <th>制作期間</th>
-					              <td>2022年6月頃から 約2週間</td>
-								  <td>2022年6月頃から 約2週間</td>
-								  <td>2022年6月頃から 約2週間</td>
-								  <td>2022年6月頃から 約2週間</td>
-					            </tr>
-					            <tr>
-					              <th>概要</th>
-					              <td>
-					                JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
-					                画面上現れたカードの中に好きなカードを選んで、
-					                占い結果の画面がランダムに表示されるアプリです。
-					              </td>
-								  <td>
-					                JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
-					                画面上現れたカードの中に好きなカードを選んで、
-					                占い結果の画面がランダムに表示されるアプリです。
-					              </td>
-								  <td>
-					                JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
-					                画面上現れたカードの中に好きなカードを選んで、
-					                占い結果の画面がランダムに表示されるアプリです。
-					              </td>
-								  <td>
-					                JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
-					                画面上現れたカードの中に好きなカードを選んで、
-					                占い結果の画面がランダムに表示されるアプリです。
-					              </td>
-					            </tr>
-					            <tr>
-					              <th>開発環境</th>
-					              <td><img src="./static/img/java-icon.png" alt="Java" /></td>
-								  <td><img src="./static/img/java-icon.png" alt="Java" /></td>
-								  <td><img src="./static/img/java-icon.png" alt="Java" /></td>
-								  <td><img src="./static/img/java-icon.png" alt="Java" /></td>
-					            </tr>
-					            <tr>
-					              <th>Link</th>
-					              <td>
-					                <a
-					                  class="resume-github-link"
-					                  href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
-					                  target="_blank"
-					                  >GitHub</a
-					                >
-					              </td>
-								  <td>
-					                <a
-					                  class="resume-github-link"
-					                  href="https://github.com/zwchin08/TankBattleGame"
-					                  target="_blank"
-					                  >GitHub</a
-					                >
-					              </td> <td>
-					                <a
-					                  class="resume-github-link"
-					                  href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
-					                  target="_blank"
-					                  >GitHub</a
-					                >
-					              </td> <td>
-					                <a
-					                  class="resume-github-link"
-					                  href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
-					                  target="_blank"
-					                  >GitHub</a
-					                >
-					              </td>
-					            </tr>
-						</table>
-					</div>
-				
-			</ul>
-		</div>
-		<!-- 个人爱好   一般展示图片-->
-		<div class="title">
-			<div class="line"></div>
-			<h3>Hobby</h3>
-			<div class="line"></div>
-		</div>
-		<div id="like">
-			
-			<div>
-				<span>#バスケットボール</span>
-				<span>#カラオケ</span>
-				<span>#ゲーム</span>
-				<span>#旅 行</span>
-				<span>#ラーメン</span>
-			</div>
-			<br>
-			<div>
-				<a href="like1.html">
-					<button> see  more </button>
+			</li>
+			<li>
+				<!-- <img src="img/zuopin05.jpg" alt=""> -->
+				<iframe src="https://drive.google.com/file/d/11-rl1DRPvEutby7vexKLO9VJalQn4a7o/preview"width="100%" height="200" allow="autoplay"></iframe>
+				<p>簡単な学生管理システム🐟</p>
+				<a href="https://drive.google.com/file/d/11-rl1DRPvEutby7vexKLO9VJalQn4a7o/preview">
+					<span>(クリックして拡大表示)</span>
 				</a>
-			</div>
-			
-		</div>
-		<!-- 联系我  -->
-		<div class="title" id="contact">
-			<div class="line"></div>
-			<h3>Contacts</h3>
-			<div class="line"></div>
-		</div>
-		<div class="contact">
-			<form action="">
-				<input type="text" placeholder="请输入您的姓名">
-				<input type="text" placeholder="请输入您的联系方式">
-				<textarea name="" id="" cols="80" rows="10" placeholder="请输入您要了解的"></textarea>
-				<button>Submit</button>
+
+			</li>
+			<li>
+				<!-- <img src="img/zuopin06.jpg" alt=""> -->
+				<iframe src="https://drive.google.com/file/d/1Lo6llkr_VP6sMc1_J8HHgyztah8XBArP/preview"width="100%" height="200" allow="autoplay"></iframe>
+				<p>Java で開発したGUI Game</p>
+				<a href="https://drive.google.com/file/d/1Lo6llkr_VP6sMc1_J8HHgyztah8XBArP/preview">
+					<span>(クリックして拡大表示)</span>
+				</a>
+			</li>
+			<li>
 				
-			</form>
-		</div>
-		
-		<div class="footer">
-			<div class="share">
-			            <a href="#" class="fab fa-facebook-f"></a>
-			            <a href="#" class="fab fa-twitter"></a>
-			            <a href="#" class="fab fa-instagram"></a>
-			            <a href="#" class="fab fa-linkedin"></a>
+				<!-- <img src="img/zuopin08.jpg" alt=""> -->
+				<iframe src="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview" width="100%" height="200" allow="autoplay"></iframe>
+				<p>AI技術を通じて处理文字识别</p>
+				<a href="https://drive.google.com/file/d/1DoR5_5qiCImDtkIpQcLqRtpL9MR2WBtW/preview">
+					<span>(クリックして拡大表示)</span>
+				</a>
+
+			</li>
+
+		</ul>
+		<ul>
+
+			<div>
+				<table class="shuoming">
+					<tr>
+						<th>難易度</th>
+						<td>★★</td>
+						<td>★★★</td>
+						<td>★★★★</td>
+						<td>★★★★★</td>
+					</tr>
+					<tr>
+						<th>制作期間</th>
+						<td>2022年6月頃から 約2週間</td>
+						<td>2022年6月頃から 約2週間</td>
+						<td>2022年6月頃から 約2週間</td>
+						<td>2022年6月頃から 約2週間</td>
+					</tr>
+					<tr>
+						<th>概要</th>
+						<td>
+							JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
+							画面上現れたカードの中に好きなカードを選んで、
+							占い結果の画面がランダムに表示されるアプリです。
+						</td>
+						<td>
+							JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
+							画面上現れたカードの中に好きなカードを選んで、
+							占い結果の画面がランダムに表示されるアプリです。
+						</td>
+						<td>
+							JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
+							画面上現れたカードの中に好きなカードを選んで、
+							占い結果の画面がランダムに表示されるアプリです。
+						</td>
+						<td>
+							JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
+							画面上現れたカードの中に好きなカードを選んで、
+							占い結果の画面がランダムに表示されるアプリです。
+						</td>
+					</tr>
+					<tr>
+						<th>開発環境</th>
+						<td>
+							<img src="./img/css-icon.png" alt="opencv" />&#12288;
+							<img src="./img/js-icon.png" alt="opencv" />&#12288;
+						</td>
+
+						<td>
+							<img src="./img/python.png" alt="python" />&#12288;
+							<img src="./img/Django.png" alt="Django" />&#12288;
+							<img src="./img/mysql.png" alt="mysql" />&#12288;
+							<br>
+							&#12288;&#12288;&#12288;&#12288;&#12288;Pycharm2021 等
+						</td>
+						<td>
+							<img src="./img/java-icon.png" alt="Java" />&#12288;&#12288;
+							IntelliJ IDEA 2020 <br>
+							&#12288;&#12288; &#12288;&#12288; &#12288; JDK 8.0
+
+						</td>
+
+						<td>
+							<img src="./img/python.png" alt="python" />&#12288;&#12288;
+							<img src="./img/opencv.png" alt="opencv" />&#12288;&#12288;
+							<img src="./img/flask.png" alt="flask" /><br>
+							Tesseract OCR &#12288;&#12288; VScode等
+
+						</td>
+
+
+					</tr>
+
+					<tr>
+						<th>Link</th>
+						<td>
+							&#12288;&#12288; &#12288;&#12288; &#12288;
+							<a class="resume-github-link"
+								href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
+								target="_blank">GitHub</a>
+						</td>
+						<td>
+							&#12288;&#12288; &#12288;&#12288; &#12288;
+							<a class="resume-github-link"
+								href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
+								target="_blank">GitHub</a>
+						</td>
+						<td>
+							&#12288;&#12288; &#12288;&#12288; &#12288;
+							<a class="resume-github-link" href="https://github.com/zwchin08/TankBattleGame"
+								target="_blank">GitHub</a>
+						</td>
+						<td>
+							&#12288;&#12288; &#12288;&#12288; &#12288;
+							<a class="resume-github-link"
+								href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
+								target="_blank">GitHub</a>
+						</td>
+
+
+					</tr>
+				</table>
 			</div>
-		
-			<p>Copyright © 2022 - 2023  吉田学園情報ビジネス専門学校 AIシステム学科 陳正偉 著作権所有</p>
+
+		</ul>
+	</div>
+	<!-- 个人爱好   一般展示图片-->
+	<div class="title">
+		<div class="line"></div>
+		<h3>Hobby</h3>
+		<div class="line"></div>
+	</div>
+	<div id="like">
+
+		<div>
+			<span>#バスケットボール</span>
+			<span>#カラオケ</span>
+			<span>#ゲーム</span>
+			<span>#旅 行</span>
+			<span>#ラーメン</span>
+		</div>
+		<br>
+		<div>
+			<a href="like1.html">
+				<button> see more </button>
+			</a>
 		</div>
 
-		<!-- <script>
+	</div>
+	<!-- 联系我  -->
+	<div class="title" id="contact">
+		<div class="line"></div>
+		<h3>Contacts</h3>
+		<div class="line"></div>
+	</div>
+	<div class="contact">
+		<form action="">
+			<input type="text" placeholder="Please enter your name.">
+			<input type="text" placeholder="Please enter your contact information.">
+			<textarea name="" id="" cols="80" rows="10"
+				placeholder="Please enter your opinions or suggestions."></textarea>
+			<button>Submit</button>
+
+		</form>
+	</div>
+
+	<div class="footer">
+		<div class="share">
+			<a href="#" class="fab fa-facebook-f"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+		</div>
+
+		<p>Copyright © 2022 - 2023 吉田学園情報ビジネス専門学校 AIシステム学科 陳正偉 著作権所有</p>
+	</div>
+
+	<!-- <script>
 			// 获取所有视频列表项
 			const videoItems = document.querySelectorAll("iframe");
 		
@@ -326,5 +341,6 @@
 			});
 			});
 		</script> -->
-	</body>
+</body>
+
 </html>
