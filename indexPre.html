@@ -7,16 +7,26 @@
     <title> ChenzhengweiProfile</title>
     <link rel="stylesheet" href="./css/style1.css">
 	<link rel="stylesheet" type="text/css" href="icon-font.css"> <!-- 引入图标字体库的CSS文件 -->
+
     <style>
         /* 使用CSS样式来设置首行缩进 */
         p {
           text-indent: 1em; /* 1em等于一个字体的宽度 */
         }
-		
+		.bubble-container{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
       </style>
+	  
 </head>
 <body>
-	
+	<div class="bubble-container"></div>
+
 	    <div class="container">
 	        <div class="top">
 	            <div class="imgBx">
@@ -238,7 +248,7 @@
 	    </div>
 	    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	
+		
     
 </body>
 </html>
