@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="./bootstrap-3.4.1/fonts/">
 	<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	
 	<style>
 		/* 设置表格样式 */
@@ -298,7 +299,7 @@
 		<h3>Contact</h3>
 		<div class="line"></div>
 	</div>
-	<div class="contact">
+	<!-- <div class="contact">
 		<form action="">
 			<input type="text" placeholder="Please enter your name.">
 			<input type="text" placeholder="Please enter your contact information.">
@@ -307,7 +308,15 @@
 			<button>Submit</button>
 
 		</form>
-	</div>
+	</div> -->
+	<div class="contact">
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Please enter your name.">
+            <input type="text" id="contactInfo" placeholder="Please enter your contact information.">
+            <textarea id="opinions" cols="80" rows="10" placeholder="Please enter your opinions or suggestions."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
 	<div class="footer">
 		
@@ -321,6 +330,36 @@
 
 		<p>Copyright © 2022 - 2023 吉田学園情報ビジネス専門学校 AIシステム学科 陳正偉 著作権所有</p>
 	</div>
+
+	<!-- 下面部分是自己想把用户输入的信息保存到数据库的 -->
+
+	<script>
+        $(document).ready(function () {
+            $("#contact-form").submit(function (event) {
+                event.preventDefault();
+                var name = $("#name").val();
+                var contactInfo = $("#contactInfo").val();
+                var opinions = $("#opinions").val();
+
+                // Send data to the backend
+                $.ajax({
+                    type: "POST",
+                    url: "/submit_feedback", // Replace with your backend URL
+                    data: {
+                        name: name,
+                        contactInfo: contactInfo,
+                        opinions: opinions
+                    },
+                    success: function (response) {
+                        alert("Data saved successfully!");
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Error saving data: " + error);
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
